@@ -68,6 +68,15 @@
             <option value="autre">Autre</option>
          </select>
           </p>
+          <p>
+             <label for="site-web">Site web ou page Instagram :</label> 
+             <input type="url" id="site-web" name="site-web" placeholder="https://www.instagram.com/"> 
+            </p>
+
+           <p> 
+            <label for="heure-retrait">Heure de retrait souhaitée :</label>
+             <input type="time" id="heure-retrait" name="heure-retrait">
+             </p>
          </fieldset>
          <fieldset>
             <legend>votre gâteau</legend>
@@ -123,10 +132,14 @@
     <label for="decors">Langages de décoration :</label>
 
     <select multiple size="4" id="decors" name="decors[]">
+        <optgroup label="Décors sucrés">
         <option value="fleurs">Fleurs en pâte à sucre</option>
-        <option value="fruits">Fruits frais</option>
-        <option value="chocolat">Décor chocolat</option>
+        <option value="chocolat">décor chocolat</option>
+        </optgroup>
+        <optgroup>
+        <option value="fruits">fruits frais</option>
         <option value="fruits-rouges">Fruits rouges</option>
+        </optgroup>
        </select>
       </p>
       <p>
