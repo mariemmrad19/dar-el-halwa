@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander _ Dar El Halwa</title>
+</head>
+<body>
+<header> 
+      <h1  >Dar El Halwa</h1>
+      <figure>
+        <figcaption><b>Notre vitrine de mignardises traditionnelles</b></figcaption>
+        <img src="patt.jpg" alt="img" width="600" height="500">
+      </figure>
+
+    <p><b>patisserie fine tunisienne depuis 1900</b></p>
+</header>
+<nav id="rr">
+    <ul>
+        <li><a href="#p1">A propos</a></li>
+        <li><a href="#p2">Nos produits</a></li>
+        <li><a href="#p3">Nos services</a></li>
+        <li><a href="carte.html">Ils parlent de nous</a></li>
+        <li><a href="#p4">Contact</a></li>
+        <li><a href="commande.html">Commander</a></li>
+
+    </ul>
+</nav>
+<MAIN> 
+<section>
+    <h2>Commander un gâteau personnalisé</h2>
+    <form action="traitement.php" method="post">
+        <fieldset>
+
+            <legend>vos coordonnées</legend>
+            <p>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" minlength="2" required>
+            </p>
+            <p>
+                <label for="prenom">prénom :</label>
+                <input type="text" id="prenom" name="prenom" minlength="2" required>
+            </p>
+            <p>
+                 <label for="email">Adresse électronique :</label>
+                 <input type="email" id="email" name="email" placeholder="vous@exemple.tn" required>
+             </p>
+              <p>
+                  <label for="telephone">Téléphone :</label>
+                 <input type="tel" id="telephone" name="telephone" pattern="\+216[0-9]{8}" title="+216 suivi de 8 chiffres" placeholder="+21622550211" required>
+             </p>
+             <p>
+        <label for="adresse">Adresse de livraison :</label>
+        <textarea id="adresse" name="adresse"
+                  rows="3" cols="40" required></textarea>
+    </p>
+
+    <p>
+        <label for="gouvernorat">Gouvernorat :</label>
+        <select id="gouvernorat" name="gouvernorat">
+            <option value="sfax" selected>Sfax</option>
+            <option value="tunis">Tunis</option>
+            <option value="sousse">Sousse</option>
+            <option value="gabes">Gabès</option>
+            <option value="autre">Autre</option>
+         </select>
+          </p>
+         </fieldset>
+         <fieldset>
+            <legend>votre gâteau</legend>
+           <p>
+    <label for="message">Message sur le gâteau :</label>
+    <input type="text" id="message" name="message"
+           maxlength="30">
+         </p>
+
+
+         <p>
+          <label for="photo">Photo de modèle :</label>
+            <input type="file" id="photo" name="photo"
+           accept="image/*">
+           </p>
+ 
+         </fieldset>
+         <p>
+    <label for="decors">Langages de décoration :</label>
+
+    <select multiple size="4" id="decors" name="decors[]">
+        <option value="fleurs">Fleurs en pâte à sucre</option>
+        <option value="fruits">Fruits frais</option>
+        <option value="chocolat">Décor chocolat</option>
+        <option value="fruits-rouges">Fruits rouges</option>
+       </select>
+      </p>
+      <p>
+         <label for="precisions">Précisions :</label>
+          <textarea id="precisions" name="precisions"
+              rows="4" cols="40" maxlength="200"></textarea>
+          </p>
+         <fieldset>
+            <legend>Occasion</legend>
+
+          <input type="radio" id="occ-anniv" name="occasion" value="anniversaire" required>
+          <label for="occ-anniv">Anniversaire</label>
+
+          <input type="radio" id="occ-mariage" name="occasion" value="mariage">
+        <label for="occ-mariage">Mariage</label>
+
+          <input type="radio" id="occ-fiancailles" name="occasion" value="fiancailles">
+         <label for="occ-fiancailles">Fiançailles</label>
+
+          <input type="radio" id="occ-autre" name="occasion" value="autre">
+         <label for="occ-autre">Autre</label>
+        </fieldset>
+         <p>
+          <label for="date">Date de retrait :</label>
+         <input type="date" id="date" name="date"
+           min="2026-09-01" required>
+         </p>
+          <fieldset>
+            <legend>confirmation</legend>
+          </fieldset>
+          <p>
+          <button type="submit">Envoyer ma commande</button>
+          <button type="reset">Tout effacer</button>
+         </p>
+    </form>
+ </section>
+    </MAIN>
+<footer>
+    Dar El Halwa 2026
+    <a href="https://www.facebook.com/darelhalwa">facebook</a>
+    <a href="https://www.instagram.com/darelhalwa">instagram</a>
+    <a href="https://www.linkedin.com/company/darelhalwa">linkedin</a>
+</footer>
+
+</body>
+</html>
