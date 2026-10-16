@@ -62,30 +62,28 @@ body {
     line-height: 1.6;
     font-size: 1rem;
 }
-table {
+
+    table {
     border-collapse: collapse;
     width: 100%;
 }
-
-thead {
-    background-color: #f5deb3;
-    color: #5c3317;
+thead{
+    background-color: var(--miel);
+    color: var(--chocolat);
 }
 
-th, td {
-    border: 1px solid #ccc;
+td, th {
+    border: 1px solid gray;
     padding: 8px;
 }
-
-tbody tr td:last-child {
+tbody tr td:last-child{
     text-align: right;
 }
-
-tbody tr:nth-child(even) {
-    background-color: #faf3e8;
+tbody tr:nth-child(even){
+    background-color:#faf3e8;
 }
-
-caption {
-    caption-side: bottom;
-    font-style: italic;
+caption{
+    caption-side:bottom;
+    font-style:italic;
+    padding-top: 8px;
 }
