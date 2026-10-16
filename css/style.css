@@ -1,0 +1,43 @@
+
+h2 {
+  color: var(--chocolat);
+  border-bottom: 2px solid var(--miel);
+}
+nav a {
+  text-decoration: none;
+  color: var(--chocolat);
+  font-weight: bold;
+}
+strong {
+  color: var(--miel);
+}
+footer {
+  background-color: var(--chocolat);
+  color: var(--creme);
+  text-align: center;
+  padding: var(--espace);
+}
+p, li {
+  line-height: 1.6;
+}
+#contact {
+  background-color: white;
+  padding: var(--espace);
+}
+.mise-en-avant {
+  font-size: larger;
+  font-style: italic;
+}
+a:link {
+  color: var(--miel);
+}
+a:visited {
+  color: var(--pistache);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--chocolat);
+}
+a:active {
+  color: var(--chocolat);
+}
